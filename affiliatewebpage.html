@@ -6,24 +6,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QUICK FIX</title>
   <style>
-    body {
-      background-color: #0E0E10; /* Dark space background */
-      color: #FFFFFF; /* White text */
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(128,0,128,1) 3%, rgba(107,63,160,1) 38%, rgba(133,84,161,1) 68%, rgba(177,156,217,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
       margin: 0;
       padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
+   }
 
     header {
-      background-color: #004080; /* Lighter blue header */
+    background-image: linear-gradient(to left, #800080,#69008c);
       padding: 20px;
       text-align: center;
       width: 100%;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-      font-family: 'Bebas Neue';
     }
 
     h1 {
@@ -40,12 +103,12 @@
     }
 
     div {
-      background-color: #004080; /* Lighter blue product background */
+      background-color: #702670; /* Lighter blue product background */
       padding: 20px;
       border-radius: 10px;
       margin: 10px;
       text-align: center;
-      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 5px 5px 10px rgba(77, 0, 75, 1);
       width: 300px;
     }
 
@@ -76,7 +139,7 @@
     }
 
     footer {
-      background-color: #004080; /* Lighter blue footer */
+      background-image: linear-gradient(to left, light blue, purple);
       padding: 5px;
       text-align: center;
       width: 100%;
@@ -101,8 +164,7 @@
 <body>
 
   <header>
-    <h1>QUICK FIX</h1><br>
-	<h3><marquee behavior="scroll" direction="right">contact +91 9876543210</marquee></h3>
+    <h1><center>QUICK FIX</center></h1>
   </header>
 
   <section>
