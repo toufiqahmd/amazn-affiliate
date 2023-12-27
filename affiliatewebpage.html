@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=auto, initial-scale=1.0">
+  <meta name="viewport" content=width=auto,content=height=auto initial-scale=1.0">
   <title>QUICK FIX</title>
   <style>
      body {
@@ -215,6 +215,26 @@
       color: #FFFFFF; /* White text */
     }
 
+
+
+    .btn  {  
+            display: inline-block;
+      	    padding: 5px 20px;
+      	    text-decoration: none;
+      
+      color: #0E0E10; /* Dark space text */
+      border-radius: 2px;
+      transition: background-color 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+
+
+}
+
+    .btn:hover {
+      background-color: #000000;
+	 transform: scale(1.2);
+    }
+
     a.button {
       display: inline-block;
       padding: 10px 20px;
@@ -222,11 +242,13 @@
       background-color: #fff01f; /* Gold button color */
       color: #0E0E10; /* Dark space text */
       border-radius: 5px;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
     }
 
     a.button:hover {
       background-color:#ffffff; /* Darker gold on hover */
+	 transform: scale(1.1);
     }
 
     footer {
@@ -259,11 +281,11 @@
 
     <nav>
 
-      <a href="https://www.instagram.com/_aesth.music_?igsh=cHozemZvOTAwNWhq"><img src="instalogo.png", width=30px, height=30px>&nbsp;</a>
+      <a href="https://www.instagram.com/_aesth.music_?igsh=cHozemZvOTAwNWhq" class="btn"><b><img src="instalogo.png", width=30px, height=30px></b></a>
 
-      <a href="#whatsapp"><img src="whatslogo.png", width=30px, height=30px>&nbsp;</a>
+      <a href="#whatsapp" class="btn"><b><img src="whatslogo.png", width=30px, height=30px></b></a>
 
-      <a href="#telegram"><img src="telegramlogo.png", width=30px, height=30px>&nbsp;</a>
+      <a href="#telegram" class="btn"><b><img src="telegramlogo.png", width=30px, height=30px></b></a>
 
     </nav>
 
